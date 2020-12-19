@@ -42,6 +42,9 @@ When using a virtual webcam to stream, you may wish to stream from one computer 
     * Advanced Voice Activity (disable if it is not already greyed-out).
     * Automatic Gain Control
     
+### Additional Notes for Particular Media Files
+* The OBS VLC plugin seems limited in its ability to control which audio and or subtitles are displayed. You may want to simply create a version of your media file with only the audio and sub trackes desired. Use [MKVToolNix](https://mkvtoolnix.download/) to do this. The executables are Windows are hosted [here](https://www.fosshub.com/MKVToolNix.html).
+    
 ### Additional Setup to Host the Stream and Engage in the Stream as a Participant from One Computer 
 * To speak on the stream, add your microphone to the OBS Studio audio mixer. Under the *Audio Properties*, under the *Monitor* column, choose *Monitor Only* for this device.
 * **TODO: How to listen to the audio of the video being streamed (without also hearing your own microphone).**

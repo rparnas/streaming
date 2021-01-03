@@ -45,7 +45,7 @@ Note that in Discord, Zoom and many other conferencing applications, the video p
 ### Step 4 (Alternative): Setup Zoom
  * **TODO**: Fill-in.
  
-## Step 4 (Alternative): Setup Streaming Server (Incomplete)
+### Step 4 (Alternative): Setup Streaming Server (Incomplete)
 * Need to look into what [video streaming protocol](https://www.wowza.com/blog/streaming-protocols). Most protocols are not natively implemented by browsers and require a JavaScript video library to decode on the client side.
 * Would be nice to continue using OBS Studio for its versatility. It only seems to support RTMP.
 * Many seem to be using nginx as the web server, and almost always on Unix.

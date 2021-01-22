@@ -54,7 +54,7 @@ Note that in Discord, Zoom and many other conferencing applications, the video p
 * Instead of a "live-streaming" solution could use a similar tech pipeline to deliver known-ahead-of-time video content allowing the web browser to pre-cache. A syncing solution would likely need to be custom-implemented on top.
     
 ### Appendix A: Additional Notes for Particular Media Files
-* The OBS VLC plugin is limited in its ability to control which audio and or subtitles are displayed. You may want to simply create a version of your media file with only the audio and sub trackes desired. Use [MKVToolNix](https://mkvtoolnix.download/) to do this. The executables are Windows are hosted [here](https://www.fosshub.com/MKVToolNix.html).
+* The OBS VLC plugin is limited in its ability to control which audio and or subtitles are displayed. You may want to simply create a version of your media file with only the single desired audio and (and single desired subtitle track if applicable).  If using subtitles you may want to set the **Fored Track** flag to **Yes**. Use [MKVToolNix](https://mkvtoolnix.download/) to do this. The executables are Windows are hosted [here](https://www.fosshub.com/MKVToolNix.html).
     
 ### Appendix B: Workarounds to Host the Stream and Engage in the Stream as a Participant from One Computer 
 * To speak on the stream, add your microphone to the OBS Studio audio mixer. Under the *Audio Properties*, under the *Monitor* column, choose *Monitor Only* for this device.

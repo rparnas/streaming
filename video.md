@@ -58,5 +58,4 @@ Note that in Discord, Zoom and many other conferencing applications, the video p
     
 ### Appendix B: Workarounds to Host the Stream and Engage in the Stream as a Participant from One Computer 
 * To speak on the stream, add your microphone to the OBS Studio audio mixer. Under the *Audio Properties*, under the *Monitor* column, choose *Monitor Only* for this device.
-* As a workaround to listen to the audio of the video being streamed run another instance of VLC playing the same video file and sync manually. You can see the timestamp of the VLC video in OBS (as well as the video playback controls) if you click on the VLC source in the OBS preview.
-* **TODO:** Come up with something better that supports all types of content. For example, manual sync is not an option for streaming non-video applications.
+* To listen to the audio being streamed from your virtual web cam, go to *Control Panel > Sound* and select the *Recording* tab. Right-click on the VB-Audio *Cable Output* device and select properties. On the *Listen* tab, check *Listen to this device*.

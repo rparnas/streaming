@@ -1,6 +1,6 @@
 # Streaming Video Files
 
-## Step 1: OBS and VLC -> VB-Cable and OBS Virtual Webcam
+## OBS and VLC -> VB-Cable and OBS Virtual Webcam
 Streaming using a virtual webcam has an advantage in video quality, video and audio stability and required bandwidth (as opposed to streaming using screen share). This setup should only be used with a video card that supports hardware video encoding.
 
 Using this method, any remaining quality bottlenecks seems to be dependent on the streaming server itself (e.g. Discord, Zoom, or one you host yourself). For example, on Discord audio quality is generally poor except at the highest paid 'boost levels'.
@@ -9,7 +9,7 @@ When using a virtual webcam to stream, you may wish to stream from one computer 
 
 Note that in Discord, Zoom and many other conferencing applications, the video preview of the OBS virtual webcam will be horizontally flipped on the local machine only.
 
-### Step 2: Setup VB-Cable
+### Step 1: Setup VB-Cable
 * A virtual audio input device is required to pass along the audio from the virtual OBS-based webcam. This is because many communication applications can only take audio from devices listed explicitly under *Control Panel \ Sound \ Recording*.
 * Download the [VB-CABLE Virtual Audio Device](https://vb-audio.com/Cable/) and run the installer as an administrator.
 
@@ -18,7 +18,7 @@ Note that in Discord, Zoom and many other conferencing applications, the video p
   * The VB-Cable installer may have changed the *Default Device* and or the *Default Communication Device* to itself. You may want to revert it back by right-clicking the appropriate device and clicking *Set as the Default Device* and *Set as the Default Communication Device* respectively.
   * Similarly ensure there is an enabled VB-Audio device under *Control Panel \ Sound \ Recording* (and revert any defaults as desired).
 
-### Step 3: Setup Virtual Webcam
+### Step 2: Setup Virtual Webcam
 * Ensure that [VLC](https://www.videolan.org/vlc/) and [OBS Studio](https://obsproject.com/) are installed. The bittage of both applications must match (i.e. 32 or 64-bit).
 * In OBS Studio, right-click the *Sources* list and choose *Add > VLC Video Source*. 
   * Choose the settings from the VLC Video Source as desired, including adding the video files to be streamed to the playlist. The playlist and other settings can be changed at any time by double-clicking on the source in the sources list.
@@ -28,7 +28,7 @@ Note that in Discord, Zoom and many other conferencing applications, the video p
 * On the Video Preview, you should right-click the VLC video feed and choose *Resize output (source size)*.
 * When you are ready to stream click *Start Virtual Camera* under *Controls* in the main window.
 
-### Step 4: Setup Discord
+### Step 3: Setup Discord
 * In Discord, go to the *User Settings Page* (gear icon)
   * Under *Voice & Video*:
     * Ensure your *Input Device* is set to VB-Audio.
@@ -42,10 +42,10 @@ Note that in Discord, Zoom and many other conferencing applications, the video p
     * Advanced Voice Activity (disable if it is not already greyed-out).
     * Automatic Gain Control
     
-### Step 4 (Alternative): Setup Zoom
+### Step 3 (Alternative): Setup Zoom
  * **TODO**: Fill-in.
  
-### Step 4 (Alternative): Setup Streaming Server (Incomplete)
+### Step 3 (Alternative): Setup Streaming Server (Incomplete)
 * Need to look into what [video streaming protocol](https://www.wowza.com/blog/streaming-protocols). Most protocols are not natively implemented by browsers and require a JavaScript video library to decode on the client side.
 * Would be nice to continue using OBS Studio for its versatility. It only seems to support RTMP.
 * Many seem to be using nginx as the web server, and almost always on Unix.
